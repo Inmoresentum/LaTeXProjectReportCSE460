@@ -29,7 +29,7 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
     \IEEEauthorblockA{\textit{DEPT: CSE} \\
     \textit{ID: 20301040}\\
     Section: 9\\
-    email address or ORCID}
+    asm.mahabub.siddiqui@g.bracu.ac.bd}
     \and
     \IEEEauthorblockN{Ayon Das}
     \IEEEauthorblockA{\textit{DEPT: CSE)} \\
@@ -53,33 +53,66 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
     \maketitle
 
     \begin{abstract}
-        This document is a model and instructions for \LaTeX.
-        This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes,
-        or Math in Paper Title or Abstract.
+        This project presents the design and implementation of a 4-bit Arithmetic Logic Unit (ALU).
+        The ALU performs arithmetic and logical operations on two 4-bit inputs and produces a 4-bit output.
+        The design is implemented using Verilog hardware description language and simulated using timing function.
+        The ALU supports basic arithmetic operations such as addition and subtraction,
+        as well as logical operations such as \textbf{\textif{ADD}}, \textbf{\textit{NAND}}, and \textbf{\textit{XNOR}}
+        as per requirements of the project.
+        Overall, this project demonstrates the design and implementation of a simple but
+        functional sequential ALU using Verilog HDL.
     \end{abstract}
 
     \begin{IEEEkeywords}
-        component, formatting, style, styling, insert
+        ALU, Verilog, arithmetic, logic, simulation
     \end{IEEEkeywords}
 
 
     \section{Introduction}\label{sec:introduction}
-    This document is a model and instructions for \LaTeX.
-    Please observe the conference page limits.
+    This report presents the design and implementation of a
+    4-bit ALU using Verilog HDL and Quartus II software.
+    The ALU was designed to perform various arithmetic
+    and logical operations such as addition, subtraction,
+    bitwise AND, bitwise OR, and bitwise XOR. The design
+    consists of various modules such as the Adder, Subtractor,
+    and logic gates which were generated based on the verilog code.
+    In this report, we provide a detailed description of the design and implementation process,
+    including the Verilog code for each module and the timing diagram for verification.
+    We also discuss the challenges encountered during the design process and how they were overcome.
+    Finally, we present the results of the hardware testing, demonstrating that
+    the ALU is capable of performing the desired operations accurately and efficiently.
+    The design of a 4-bit ALU is an essential component in digital circuit design,
+    and it is a fundamental building block in many larger circuits and VLSI design.
 
 
-    \section{Ease of Use}\label{sec:ease-of-use}
+    \section{Finite State Machine Design and Implementation}\label{sec:ease-of-use}
 
-    \subsection{Maintaining the Integrity of the Specifications}\label{subsec:maintaining-the-integrity-of-the-specifications}
+    Finite State Machine (FSM) is a model for designing sequential logic circuits,
+    where the circuit's behavior is determined by a finite number of states, inputs,and outputs.
+    In this case, the FSM is designed to implement four different operations,
+    namely RESET, XNOR, SUB, and ADD on two 4-bit inputs A and B.
+    The way we coded the Verilog code represents the implementation of the FSM,
+    which is designed to perform the above mentioned arithmetic and logical operations on the given input values.
+    The FSM has four states, which are encoded as 2-bit values, as follows:
+    State 0 (2'b00): In this state, the circuit performs the selected operation on the first bit of the input values and transitions to the next state.
+    State 1 (2'b01): In this state, the circuit performs the selected operation on the second bit of the input values and transitions to the next state.
+    State 2 (2'b10): In this state, the circuit performs the selected operation on the third bit of the input values and transitions to the next state.
+    State 3 (2'b11): In this state, the circuit performs the selected operation on the fourth and most significant bit of the input values and transitions back to the initial state.
+    Before transition it also sets the values of zero flag, sign flag and carry flag.
 
-    The IEEEtran class file is used to format your paper and style the text.
-    All margins,
-    column widths, line spaces, and text fonts are prescribed; please do not
-    alter them. You may note peculiarities. For example, the head margin
-    measures proportionately more than is customary. This measurement
-    and others are deliberate, using specifications that anticipate your paper
-    as one part of the entire proceedings, and not as an independent document.
-    Please do not revise any of the current designations.
+%    Todo: Will be adding a figure here.
+
+    Things are checked and done slightly different based on the \textit{opcode}.
+    The four different operations are implemented using a case statement with \textit{opcode} as the selector.
+    Each operation case statement contains the logic required to perform the operation on the given input values, and update the output values of the circuit accordingly.
+    For example, for the ADD operation, the code first calculates the sum of the LSBs of the input values, adds the carry value to it (initially 0),
+    and assigns the sum and the carry value to the output register C.
+    Then, it updates the zero flag, which is set to 1 if the output is 0, and transitions to the next state.
+    The outputs of the circuit include C, which stores the result of the operation,
+    carr, which is the carry bit generated during addition or subtraction,
+    sign, which is the sign bit of the output value, and zero, which is set to 1 if the output is zero.
+    Overall, the FSM implementation allows the circuit to perform different arithmetic and logical
+    operations on the given input values, and update the output values based on the operation performed.
 
 
     \section{Prepare Your Paper Before Styling}
