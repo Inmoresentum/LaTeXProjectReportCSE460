@@ -27,7 +27,7 @@ The four different operations are implemented using a case statement with \texti
 Each operation case statement contains the logic required to perform the operation on the given input values, and update the output values of the circuit accordingly.
 For example, for the ADD operation, the code first calculates the sum of the LSBs of the input values, adds the carry value to it (initially 0),
 and assigns the sum and the carry value to the output register C.
-Then, it updates the zero flag, which is set to 1 if the output is 0, and transitions to the next state.
+Then, it updates the zero flag, which is set to 1 if the output is 0, and transitions to the next state which we can see from Fig \ref{fig:FSM}.
 The outputs of the circuit include C, which stores the result of the operation,
 carr, which is the carry bit generated during addition or subtraction,
 sign, which is the sign bit of the output value, and zero, which is set to 1 if the output is zero.
