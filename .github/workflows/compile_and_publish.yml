@@ -18,7 +18,8 @@ jobs:
             texlive-latex-base \
             texlive-latex-extra \
             texlive-fonts-recommended \
-            texlive-science
+            texlive-science \
+            texlive-publishers
 
       - name: Build LaTeX document
         working-directory: src
