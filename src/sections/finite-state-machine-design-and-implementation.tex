@@ -1,0 +1,36 @@
+Finite State Machine (FSM) is a model for designing sequential logic circuits,
+where the circuit's behavior is determined by a finite number of states, inputs and outputs.
+In this case, the FSM is designed to implement four different operations,
+namely RESET, XNOR, SUB, and ADD on two 4-bit inputs A and B.
+The way we coded the Verilog code represents the implementation of the FSM,
+which is designed to perform the above-mentioned arithmetic and logical operations on the given input values.
+The FSM has four states, which are encoded as 2-bit values, as follows:
+
+\begin{itemize}
+    \item State 0 (\textit{2'b00}): In this state, the circuit performs the selected operation on the first bit of the input values and transitions to the next state.
+    \item State 1 (\textit{2'b01}): In this state, the circuit performs the selected operation on the second bit of the input values and transitions to the next state.
+    \item State 2 (\textit{2'b10}): In this state, the circuit performs the selected operation on the third bit of the input values and transitions to the next state.
+    \item State 3 (\textit{2'b11}): In this state, the circuit performs the selected operation on the fourth and most significant bit of the input values and transitions back to the initial state.
+\end{itemize}
+
+Before transition, it also sets the values of \textit{zero} \textit{flag, sign} flag and \textit{carry} flag.
+
+%    Todo: This is where I will be adding the FSM figures.
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics{figures/fig1}}
+    \caption{This is where we are going to add FSM diagram.}
+    \label{fig:FSM}
+\end{figure}
+
+Things are checked and done slightly different based on the \textit{opcode}.
+The four different operations are implemented using a case statement with \textit{opcode} as the selector.
+Each operation case statement contains the logic required to perform the operation on the given input values, and update the output values of the circuit accordingly.
+For example, for the ADD operation, the code first calculates the sum of the LSBs of the input values, adds the carry value to it (initially 0),
+and assigns the sum and the carry value to the output register C.
+Then, it updates the zero flag, which is set to 1 if the output is 0, and transitions to the next state.
+The outputs of the circuit include C, which stores the result of the operation,
+carr, which is the carry bit generated during addition or subtraction,
+sign, which is the sign bit of the output value, and zero, which is set to 1 if the output is zero.
+Overall, the FSM implementation allows the circuit to perform different arithmetic and logical
+operations on the given input values, and update the output values based on the operation performed.
