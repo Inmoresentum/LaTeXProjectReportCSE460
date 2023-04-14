@@ -1,51 +1,43 @@
-name: LaTeX Build and Release
+name: Build LaTeX document and create release
 
 on:
   push:
     branches:
       - main
 
-env:
-  PDF_FILENAME: Project_Report.pdf
-  RELEASE_NAME: Release ${{ github.sha }}
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      - name: Install LaTeX
+      - name: Install LaTeX packages
         run: |
-          sudo apt-get update && \
-          sudo apt-get install -y texlive-full
+          sudo apt-get update -y && sudo apt-get install -y \
+            texlive-latex-base \
+            texlive-latex-extra \
+            texlive-fonts-recommended \
+            texlive-science
 
-      - name: Build LaTeX
+      - name: Build LaTeX document
+        working-directory: src
         run: |
-          cd src
-          pdflatex main.tex
-          bibtex main
-          pdflatex main.tex
-          pdflatex main.tex
+          pdflatex -interaction=nonstopmode main.tex
+          pdflatex -interaction=nonstopmode main.tex
 
-      - name: Create Release
+      - name: Create release
         uses: actions/create-release@v1
-        id: create_release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.sha }}
-          release_name: ${{ env.RELEASE_NAME }}
+          tag_name: v${{ github.run_number }}
+          release_name: Release ${{ github.run_number }}
           body: |
-            Changes in this release:
-            - added new feature
-            - fixed bugs
+            Changes in this Release
+            - Successfully compiled the `main.tex` file
           draft: false
           prerelease: false
+          files: |
+            src/output.pdf
 
-      - name: Upload PDF as Asset
-        uses: actions/upload-release-asset@v1
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./src/${{ env.PDF_FILENAME }}
-          asset_name: ${{ env.PDF_FILENAME }}
-          asset_content_type: application/pdf
