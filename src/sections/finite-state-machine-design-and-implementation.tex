@@ -15,15 +15,14 @@ The FSM has four states, which are encoded as 2-bit values, as follows:
 
 Before transition, it also sets the values of \textit{zero} \textit{flag, sign} flag and \textit{carry} flag.
 
-%    Todo: This is where I will be adding the FSM figures.
-
 \begin{figure}[htbp]
-    \centerline{\includegraphics{figures/fig1}}
-    \caption{This is where we are going to add FSM diagram.}
+    \centerline{\includegraphics[height=5cm,width=6cm]{figures/fsm}}
+    \caption{Smaller FSM Diagram}
     \label{fig:FSM}
 \end{figure}
 
 Things are checked and done slightly different based on the \textit{opcode}.
+It can be observed from the above Fig \ref{fig:FSM} clearly.
 The four different operations are implemented using a case statement with \textit{opcode} as the selector.
 Each operation case statement contains the logic required to perform the operation on the given input values, and update the output values of the circuit accordingly.
 For example, for the ADD operation, the code first calculates the sum of the LSBs of the input values, adds the carry value to it (initially 0),
