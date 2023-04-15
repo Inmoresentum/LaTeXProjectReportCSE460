@@ -2,22 +2,39 @@ After implementing the verilog code.
 We used the timing function to verify the working of the code.
 Below, we are attaching the screenshots from the timing diagram
 
-\subsection{ADD Operation}\label{subsec:add-operation}
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[scale=0.2]{figures/add}
+    \end{center}
+    \caption{Timing Daigram for ADD Operation}
+    \label{fig:timing add}
+\end{figure}
 
-information for the ADD operation and screenshots from quartus altera's timing diagram.
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[scale=0.2]{figures/add}
+    \end{center}
+    \caption{Sub Operation does not work properly}
+    \label{fig:timing sub}
+\end{figure}
 
-\subsection{SUB Operation}\label{subsec:sub-operation}
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[scale=0.2]{figures/nand}
+    \end{center}
+    \caption{Timing Daigram for NAND Operation}
+    \label{fig:timing nand}
+\end{figure}
 
-information for the SUB operation and screenshots from quartus altera's timing diagram.
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[scale=0.2]{figures/xnor}
+    \end{center}
+    \caption{Timing Daigram for XNOR Operation}
+    \label{fig:timing xnor}
+\end{figure}
 
-\subsection{NAND Operation}\label{subsec:nand-operation}
-
-information for the NAND operation and screenshots from quartus altera's timing diagram.
-
-\subsection{XNOR Operation}\label{subsec:xnor-operation}
-
-information for the XNOR operation and screenshots from quartus altera's timing diagram.
-
-\subsection{Full working with reset operation}\label{subsec:full-working-with-reset-operation}
-
-information for the all operation with reset functionality and screenshots from quartus altera's timing diagram.
+NAND and XNOR operation are pretty much straight forward.
+All we had to do is put the equation in the verilog and then the
+operation performed as expected.
+Below timing diagram, those operations are attached.
