@@ -1,10 +1,15 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
 
-# CSE460 SPRING 2023 LAB PROJECT REPORT LATEX REPOSITORY
+<h1 align="center">
+CSE460 SPRING 2023 LAB PROJECT REPORT LATEX REPOSITORY
+</h1> 
+<p align="center">
 
-![texlive (tag)](https://img.shields.io/badge/texlive-2022-orange)
-![texlive (tag)](https://img.shields.io/badge/texify-idea-red)
-![node-current (tag)](https://img.shields.io/bower/l/bootstrap?color=blue&label=LICENSE)
+<img src="https://img.shields.io/badge/texlive-2022-orange"  alt="whatever">
+<img src="https://img.shields.io/badge/texify-idea-red"  alt="whatever">
+<img src="https://img.shields.io/bower/l/bootstrap?color=blue&label=LICENSE"  alt="whatever">
+
+</p>
 
 ## PROJECT TITLE: 4 Bit ALU
 
@@ -18,10 +23,10 @@ This repository contains the `LaTeX` project which I used to submit the Lab Proj
 
 ## Group Information
 
+* [ATHAR NOOR MOHAMMAD RAFEE _\[20101396\]_](https://github.com/Inmoresentum/)
 * [A.S.M MAHABUB SIDDIQUI _\[20301040\]_](https://www.facebook.com/saakib.33)
 * [AYON DAS _\[20301099\]_](https://www.facebook.com/ayondas.dhrubo)
-* [MD.SAKIB _\[20301180\]_](https://www.facebook.com/profile.php?id=100010446792529)
+* [MD. SAKIB _\[20301180\]_](https://www.facebook.com/profile.php?id=100010446792529)
 * [MOHAMMED INZAM UL AZAM _\[20101144\]_](https://www.facebook.com/inzamulazameron)
-* [ATHAR NOOR MOHAMMAD RAFEE _\[20101396\]_](https://github.com/Inmoresentum/)
 
 ### Feel free to use this project as a `TEMPLATE` for your own use case.
