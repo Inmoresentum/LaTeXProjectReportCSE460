@@ -7,7 +7,7 @@ Below figure \ref{fig:timing add} shows the \textbf{ADD} operation between two b
 where the result is stored C sequentially in each clock cycles.
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[scale=0.2]{figures/add}
+        \includegraphics[width = 0.4\textwidth]{figures/add}
     \end{center}
     \caption{Timing Daigram for ADD Operation}
     \label{fig:timing add}
@@ -17,7 +17,7 @@ where the result is stored C sequentially in each clock cycles.
 Below figure \ref{fig:timing sub} shows the \textbf{SUB} operation between two binary \textit{A = 0111 and B = 0111}
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[scale=0.1]{figures/sub_operation}
+        \includegraphics[width = 0.4\textwidth]{figures/sub_operation}
     \end{center}
     \caption{Timing Diagram for Sub Operation}
     \label{fig:timing sub}
@@ -32,7 +32,7 @@ Below timing diagram, those operations are attached.
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[scale=0.2]{figures/nand}
+        \includegraphics[width = 0.4\textwidth]{figures/nand}
     \end{center}
     \caption{Timing Daigram for NAND Operation}
     \label{fig:timing nand}
@@ -41,21 +41,21 @@ Below timing diagram, those operations are attached.
 \subsection{XNOR Operation}\label{subsec:xnor-operation}
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[scale=0.2]{figures/xnor}
+        \includegraphics[width = 0.4\textwidth]{figures/xnor}
     \end{center}
     \caption{Timing Daigram for XNOR Operation}
     \label{fig:timing xnor}
 \end{figure}
 
 \subsection{Multiple Operation With Reset}\label{subsec:multiple-operation-with-reset}
-The below attached figure \ref{fig:multiple operation} shows multiple Operations with set and reset functionality.
+The below attached Figure \ref{fig:multiple operation} shows multiple Operations with \textbf{SET} and \textbf{RESET} functionality.
 At first the \textbf{SUB} operation is performed between binary number \textit{0111} and \textit{0111}.
 After that, the \textbf{opcode} is changed to reset which is \textit{000} during time \textit{40ns} to \textit{50ns}.
 Next, the \textbf{opcode} was changed to \textit{011} and performed \textbf{NANAD} operation during the next \textbf{4} clock cycles.
-After that the mandatory an \textbf{RESET} and then \textbf{ADD} operation for another 4 cycles.
+After that the mandatory \textbf{RESET} and then \textbf{ADD} operation for another 4 cycles.
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[scale=0.18]{figures/three_operation_together_sub_nand_add_with_reset}
+        \includegraphics[width = 0.4\textwidth]{figures/three_operation_together_sub_nand_add_with_reset}
     \end{center}
     \caption{Timing Daigram with reset}
     \label{fig:multiple operation}
