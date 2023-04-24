@@ -3,6 +3,7 @@
 <h1 align="center">
 CSE460 SPRING 2023 LAB PROJECT REPORT LATEX REPOSITORY
 </h1> 
+
 <p align="center">
 
 <img src="https://img.shields.io/badge/texlive-2022-orange"  alt="whatever">
@@ -31,3 +32,13 @@ This repository contains the `LaTeX` project which I used to submit the Lab Proj
 * [MOHAMMED INZAM UL AZAM _\[20101144\]_](https://www.facebook.com/inzamulazameron)
 
 ### Feel free to use this project as a `TEMPLATE` for your own use case.
+
+&nbsp;
+
+<p align="center">Copyright &copy 2023-present <a href="https://github.com/Inmoresentum" target="_blank">Inmoresentum</a>
+
+<p align="center">
+    <a href="https://github.com/Inmoresentum/CSE460GroupProject/blob/main/LICENSE">
+        <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=MPL&message=2.0&colorA=363a4f&colorB=b7bdf8"/>
+    </a>
+</p>
