@@ -3,8 +3,8 @@ We used the timing function to verify the working of the code.
 Below, we are attaching the screenshots from the timing diagram
 
 \subsection{ADD Operation:}\label{subsec:add-operation}
-Below figure \ref{fig:timing add} shows the \textbf{ADD} operation between two binary \textit{A = 1111 and B = 1111}
-where the result is stored C sequentially in each clock cycles.
+Below figure \ref{fig:timing add} shows the \textbf{ADD} operation between two binary \textit{A = 1111 and B = 1111} numbers
+where the result is stored in register \textit{C} sequentially in each clock cycles.
 \begin{figure}[H]
     \begin{center}
         \includegraphics[width = 0.4\textwidth]{figures/add}
@@ -14,7 +14,9 @@ where the result is stored C sequentially in each clock cycles.
 \end{figure}
 
 \subsection{SUB Operation}\label{subsec:sub-operation}
-Below figure \ref{fig:timing sub} shows the \textbf{SUB} operation between two binary \textit{A = 0111 and B = 0111}
+Below figure \ref{fig:timing sub} shows the \textbf{SUB} operation between two binary \textit{A = 0111 and B = 0111} where the output \textit{C} = \textit{0000}.
+As we are working with signed number, the numbers are represented as \textbf{2s complement}.
+
 \begin{figure}[H]
     \begin{center}
         \includegraphics[width = 0.4\textwidth]{figures/sub_operation}
@@ -60,4 +62,3 @@ After that the mandatory \textbf{RESET} and then \textbf{ADD} operation for anot
     \caption{Timing Daigram with reset}
     \label{fig:multiple operation}
 \end{figure}
-
