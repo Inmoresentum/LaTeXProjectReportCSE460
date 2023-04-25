@@ -8,7 +8,6 @@ CSE460 SPRING 2023 LAB PROJECT REPORT LATEX REPOSITORY
 
 <img src="https://img.shields.io/badge/texlive-2022-orange"  alt="whatever">
 <img src="https://img.shields.io/badge/texify-idea-red"  alt="whatever">
-<img src="https://img.shields.io/bower/l/bootstrap?color=blue&label=LICENSE"  alt="whatever">
 <img src="https://github.com/Inmoresentum/LaTeXProjectReportCSE460/actions/workflows/compile_and_publish.yml/badge.svg"  alt="whatever">
 
 </p>
@@ -31,14 +30,14 @@ This repository contains the `LaTeX` project which I used to submit the Lab Proj
 * [MD. SAKIB _\[20301180\]_](https://www.facebook.com/profile.php?id=100010446792529)
 * [MOHAMMED INZAM UL AZAM _\[20101144\]_](https://www.facebook.com/inzamulazameron)
 
-### Feel free to use this project as a `TEMPLATE` for your own use case.
+### Feel free to use this project as a `TEMPLATE` for your own use case respecting the [LICENSE](https://github.com/Inmoresentum/LaTeXProjectReportCSE460/blob/main/LICENSE).
 
 &nbsp;
 
-<p align="center">Copyright &copy 2023-present <a href="https://github.com/Inmoresentum" target="_blank">Inmoresentum</a>
+<p align="center">Copyright &copy; 2023-present <a href="https://github.com/Inmoresentum" target="_blank">Inmoresentum</a>
 
 <p align="center">
-    <a href="https://github.com/Inmoresentum/CSE460GroupProject/blob/main/LICENSE">
-        <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=MPL&message=2.0&colorA=363a4f&colorB=b7bdf8"/>
+    <a href="https://github.com/Inmoresentum/LaTeXProjectReportCSE460/blob/main/LICENSE">
+        <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&colorA=363a4f&colorB=b7bdf8"/>
     </a>
 </p>
