@@ -19,7 +19,7 @@ As we are working with signed number, the numbers are represented as \textbf{2s 
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[width = 0.4\textwidth]{figures/sub_operation}
+        \includegraphics[width = 0.4\textwidth]{figures/Sub_Operation}
     \end{center}
     \caption{Timing Diagram for Sub Operation}
     \label{fig:timing sub}
@@ -51,13 +51,13 @@ Below timing diagram, those operations are attached.
 
 \subsection{Multiple Operation With Reset}\label{subsec:multiple-operation-with-reset}
 The below attached Figure \ref{fig:multiple operation} shows multiple Operations with \textbf{SET} and \textbf{RESET} functionality.
-At first the \textbf{SUB} operation is performed between binary number \textit{0111} and \textit{0111}.
-After that, the \textbf{opcode} is changed to reset which is \textit{000} during time \textit{40ns} to \textit{50ns}.
-Next, the \textbf{opcode} was changed to \textit{011} and performed \textbf{NANAD} operation during the next \textbf{4} clock cycles.
-After that the mandatory \textbf{RESET} and then \textbf{ADD} operation for another 4 cycles.
+At first the \textbf{ADD} operation is performed between binary number \textit{0001} and \textit{0111}.
+After that, the \textbf{opcode} is changed to RESET which is \textit{000} during time \textit{50ns} to \textit{60ns}.
+Next the \textbf{opcode} was changed to \textit{010} and performed \textbf{SUB} operation during the next \textbf{8} clock cycles or two \textbf{BUS} cycles.
+After that the mandatory \textbf{RESET} and then \textbf{NAND} operation for another 4 cycles as the \textit{opcode} was changed to \textit{011}.
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[width = 0.4\textwidth]{figures/three_operation_together_sub_nand_add_with_reset}
+        \includegraphics[width = 0.4\textwidth]{figures/Multiple_Operations}
     \end{center}
     \caption{Timing Daigram with reset}
     \label{fig:multiple operation}
