@@ -8,8 +8,9 @@ CSE460 SPRING 2023 LAB PROJECT REPORT LATEX REPOSITORY
 
 <img src="https://img.shields.io/badge/texlive-2022-orange"  alt="whatever">
 <img src="https://img.shields.io/badge/texify-idea-red"  alt="whatever">
+<a href="https://github.com/Inmoresentum/LaTeXProjectReportCSE460/actions/workflows/compile_and_publish.yml">
 <img src="https://github.com/Inmoresentum/LaTeXProjectReportCSE460/actions/workflows/compile_and_publish.yml/badge.svg"  alt="whatever">
-
+</a>  
 </p>
 
 ## PROJECT TITLE: 4 Bit ALU
